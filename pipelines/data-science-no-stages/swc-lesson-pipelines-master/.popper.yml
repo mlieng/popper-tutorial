@@ -1,8 +1,4 @@
-metadata:
-  access_right: open
-  license: CC-BY-4.0
-  publication_type: article
-  upload_type: publication
+metadata: {}
 pipelines:
   co2-emissions:
     envs:
@@ -16,10 +12,7 @@ pipelines:
     envs:
     - host
     path: pipelines/data-science-no-stages
-    stages:
-    - run
-    - generate-figures
-    - validate
+    stages: []
   docker-data-science:
     envs:
     - host
@@ -29,15 +22,10 @@ pipelines:
     - generate-learning-curves
     - generate-figures
     - validate
-  myexp:
+  sea-surface-mapping:
     envs:
     - host
-    path: pipelines/myexp
+    path: pipelines/sea-surface-mapping
     stages:
-    - setup
-    - run
-    - post-run
-    - validate
-    - teardown
-popperized:
-- github/popperized
+    - setup.sh
+    - run.sh
