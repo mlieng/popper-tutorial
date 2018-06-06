@@ -1,4 +1,3 @@
-
 #!/bin/bash
 # [wf] obtain n-year means
 set -ex

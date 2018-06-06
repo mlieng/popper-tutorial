@@ -12,4 +12,5 @@ curl -L \
   https://github.com/datasets/co2-fossil-global/raw/master/global.csv
 
 # [wf] add zeros to missing per capita column values
+
 scripts/add_zeros.py data/global.csv

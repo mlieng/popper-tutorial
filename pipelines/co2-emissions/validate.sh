@@ -6,4 +6,5 @@ set -ex
 scripts/validate_output.py data/global_per_capita_mean.csv
 
 # [wf] generate markdown table
+
 scripts/get_mdown_table.py data/global_per_capita_mean.csv
