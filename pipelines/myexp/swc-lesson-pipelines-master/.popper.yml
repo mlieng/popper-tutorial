@@ -1,0 +1,31 @@
+metadata: {}
+pipelines:
+  co2-emissions:
+    envs:
+    - host
+    path: pipelines/co2-emissions
+    stages:
+    - setup
+    - run
+    - validate
+  data-science-no-stages:
+    envs:
+    - host
+    path: pipelines/data-science-no-stages
+    stages: []
+  docker-data-science:
+    envs:
+    - host
+    path: pipelines/docker-data-science
+    stages:
+    - build-docker-image
+    - generate-learning-curves
+    - generate-figures
+    - validate
+  sea-surface-mapping:
+    envs:
+    - host
+    path: pipelines/sea-surface-mapping
+    stages:
+    - setup.sh
+    - run.sh
